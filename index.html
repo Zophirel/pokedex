@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pokédex</title>
+        <link rel="stylesheet" href="css/milligram.css">
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <h1>Cerca un Pokémon</h1>
+                </div>
+                <div class="row">
+                    <input type="text" name="search_bar" id="search_bar" placeholder="e.g. Bulbasaur">
+                </div>
+                <div class="row">
+                    <div id="result_box">
+                        <ul id="results"></ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="button" id="search_btn" value="CERCA">
+                </div>  
+            </div>
+       </header>
+       
+       <main>
+        <div class="container">
+            <div class="row" id="results_header"></div>
+            <div class="row" id="info">
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="column">
+                    <div id="imgctn"></div>
+                </div>
+                <div class="column" id="sprite-buttons">
+                    <div class="button button-outline" id = "default-sprite">default</div>
+                    <br>
+                    <div class="button button-outline" id = "shiny-sprite"> 
+                        <span id="shiny-span">shiny</span>
+                    </div>     
+                </div>
+                <div class="column">
+                    <div id="stats-ctn">
+                        <div id="stats"></div>
+                    </div>
+                </div>   
+            </div>
+            <div class="row">
+                <input type="button" id="add_to_pokedex" value="Aggiungilo al Pokédex">
+            </div> 
+        </div>
+       
+       </main>
+
+       <footer class="container" >
+        <div class="row">
+            <h2 id="result_text">Il tuo Pokédex</h2>
+        </div> 
+        <div class="row" id="pokedex">
+
+        </div>
+       </footer>
+       <script src="script/pokedex.js"></script>
+       <script src="script/search.js"></script>
+       <script src="script/layout.js"></script>
+       
+    </body>
+</html>

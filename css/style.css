@@ -1,0 +1,163 @@
+main {
+    display: none;
+}
+
+footer {
+    display: none;
+}
+
+#result_text {
+    text-align: center;
+}
+
+#result_box{
+    display: none;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    padding: 10px 10px 10px 10px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(199, 199, 199);
+    border-width: 1px;
+    border-style: solid;
+
+}
+
+#result_box > ul {
+    margin: 0;
+    list-style: none;
+}
+
+#result_box > ul > li {
+    padding-left: 10px;
+}
+
+#result_box > ul > li:hover {
+    cursor: pointer;
+    background-color: rgb(199, 199, 199);
+}
+
+#stats {
+    width: 162px;
+}
+
+#stats-ctn{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+#stats > h4{
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+#add_to_pokedex {
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+#pokedex{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.pokedex_pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;   
+    margin-right: 40px;
+    margin-bottom: 40px ;
+}
+
+.pokedex_pokemon > img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+#pokedex_pokemon > h3 {
+    text-align: center;
+}
+
+#results_header{
+    margin-top: 50px;
+}
+
+#info{
+    text-align: center;
+}
+
+#sprite-buttons{
+    margin: auto; 
+    text-align: center;
+}
+
+#shiny-span{
+    margin-left: 8px; 
+    margin-right: 8px;
+}
+
+#sprite {
+    text-align: center;
+}
+
+#imgctn > img {
+    object-fit: contain;
+    height: 388px;
+    width: auto;
+    margin-top: auto;
+}
+
+#imgctn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: auto;
+}
+
+#pokedex_pokemon_img{
+    text-align: center;
+}
+
+@media screen and (min-width: 640px) {
+    #imgctn > img {
+        object-fit: contain;
+        max-height: 388px;
+        max-width: 340px;
+    }    
+}
+
+@media screen and (max-width: 639px) {
+    #imgctn{
+        text-align: left;
+    }
+    
+    #stats > h4{
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+
+    #stats-ctn{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap; 
+    }
+
+    .pokedex_pokemon{
+        margin-right: 0;
+        
+    }
+
+    #pokedex_pokemon_img{
+        text-align: center;
+        height: 200px;
+    }
+}
+
