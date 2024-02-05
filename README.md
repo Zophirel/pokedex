@@ -17,7 +17,7 @@ This is a Pokédex frontend app that allows users to search for Pokémon and vie
 5. Click "Aggiungilo al Pokédex" to add the Pokémon to your Pokédex.
 
 ## Demo
-You can find a demo of the pokedex app [here](https://123-pokedex.netlify.app/ "here")
+You can find a demo of the pokedex app [here](https://pok3dx.netlify.app/ "here")
 
 ## Files and Structure
 
